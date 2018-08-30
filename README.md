@@ -8,6 +8,13 @@
 
 基于 `latex` 和 `MathJax` 实现的。
 
+## 具体效果
+
+[result2](https://github.com/zzugbb/formula-edit/blob/master/img/result2.jpg)
+
+[result1](https://github.com/zzugbb/formula-edit/blob/master/img/result1.jpg)
+
+
 ## 说明
 
 此demo主要运用了 `MathJax` 及 `layer` 组件。 公式是 `latex` 语法形式。
@@ -25,8 +32,6 @@
 `MathJax` 是一个 `JavaScript` 引擎，用来显示网络上的数学公式, 它可以工作于所有流行的浏览器上。
 
 可以对 `latex` 公式代码识别，进行实际渲染。
-
-## 具体效果
 
 ## 参考资料
 
