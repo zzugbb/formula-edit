@@ -10,9 +10,9 @@
 
 ## 具体效果
 
-[result2](https://github.com/zzugbb/formula-edit/blob/master/img/result2.jpg)
+![result2](https://github.com/zzugbb/formula-edit/blob/master/img/result2.jpg)
 
-[result1](https://github.com/zzugbb/formula-edit/blob/master/img/result1.jpg)
+![result1](https://github.com/zzugbb/formula-edit/blob/master/img/result1.jpg)
 
 
 ## 说明
