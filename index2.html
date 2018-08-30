@@ -9,19 +9,16 @@
 </head>
 <body id="body">
   <div>
-     <p id="edit-button-1" style="margin:10px;" text="1.若$a=2\sqrt{3}\ A=30{}^\circ $，讨论当b为何值时，三角形有一解，有两解，无解.">
-      1.若$a=2\sqrt{3}\ A=30{}^\circ $，讨论当b为何值时，三角形有一解，有两解，无解．
-     </p>
-     <button style="margin:10px;" class="edit-button" idCode="edit-button-1">点击编辑</button>
-  </div>
-  <div>
-    <p id="edit-button-2" style="margin:10px;" text="2.在△ABC中，若$a=15\ \ \text{ }b=10$， ，则$\cos B=$_____">
-      2.在△ABC中，若$a=15\ \ \text{ }b=10$， ，则$\cos B=$_____．
+    <p class="quest" id="edit-button-1" text="1.若$a=2\sqrt{3}\ A=30{}^\circ $，讨论当b为何值时，三角形有一解，有两解，无解.">
+      1. 若$a=2\sqrt{3}\ A=30{}^\circ $，讨论当b为何值时，三角形有一解，有两解，无解．
     </p>
-    <button style="margin:10px;" class="edit-button" idCode="edit-button-2">点击编辑</button>
+    <button class="edit-button" idCode="edit-button-1">点击编辑</button>
   </div>
-  <div class="black_overlay"></div>
-  <div class="alert_content">
+
+  <!--遮罩层-->
+  <div class="black-overlay"></div>
+  <!--点击公式的弹层-->
+  <div class="alert-content">
     <div class="operate-area">
       <img id="operate1" src="./img/operate1.png"/>
       <img id="operate2" src="./img/operate2.png"/>
@@ -36,6 +33,8 @@
       <span class="confirm-button">确认</span>
     </div>
   </div>
+
+  <!--不同公式图标对应的内容区域，上述的1-5-->
   <ul class="formula-area" id="operate1-area" style="display:none">
     <li><img src="http://latex.codecogs.com/gif.latex?\alpha" code="\alpha" /></li>
     <li><img src="http://latex.codecogs.com/gif.latex?\beta" code="\beta" /></li>
@@ -173,8 +172,8 @@
     <li><img src="http://latex.codecogs.com/gif.latex?\Updownarrow" code="\Updownarrow"/></li>
   </ul>
 </body>
-<script type="text/javascript" src="./MathJax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/javascript" src="./jquery/1.12.3/jquery.min.js"></script>
-<script type="text/javascript" src="./layer/3.1.0/layer.js"></script>
-<script type="text/javascript" src="./js/formula-edit2.js"></script>
+<script type="text/javascript" src="MathJax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="jquery/1.12.3/jquery.min.js"></script>
+<script type="text/javascript" src="layer/3.1.0/layer.js"></script>
+<script type="text/javascript" src="js/formula-edit2.js"></script>
 </html>

@@ -1,25 +1,4 @@
-body,
-ul,
-ol,
-li,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form,
-fieldset,
-table,
-td,
-th,
-img,
-div,
-dl,
-dt,
-dd,
-input {
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, th, img, div, dl, dt, dd, input, textarea {
   margin: 0;
   padding: 0;
 }
@@ -28,7 +7,16 @@ li {
   list-style: none;
 }
 
-.black_overlay {
+.quest {
+  line-height: 30px;
+  margin: 50px;
+}
+
+.edit-button {
+  margin-left: 50px;
+}
+
+.black-overlay {
   display: none;
   position: fixed;
   top: 0%;
@@ -42,7 +30,7 @@ li {
   filter: alpha(opacity=50);
 }
 
-.alert_content {
+.alert-content {
   display: none;
   width: 500px;
   background-color: #ffffff;
@@ -57,54 +45,69 @@ li {
 }
 
 .operate-area {
-  width: 390px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
   height: 40px;
-  line-height: 40px;
-  margin-left: 50px;
-  padding: 5px;
+  margin: 5px 50px;
 }
 
 .operate-area img {
-  vertical-align: middle;
-  margin-left: 10px;
-  margin-right: 10px;
   cursor: pointer;
 }
 
 #text {
-  width: 394px;
-  height: 100px;
-  margin-left: 50px;
+  width: 392px;
+  height: 142px;
+  padding: 3px;
+  margin: 0 50px;
+  font-size: 16px;
 }
 
 #text-show {
   margin: 10px auto;
   width: 386px;
   padding: 5px;
-  height: 100px;
+  height: 186px;
   border: #dddddd dashed 2px;
-  word-break: break-all;
+  word-break: break-all; 
+  overflow-y: scroll;
 }
 
 .button-area {
   width: 300px;
-  margin: 10px auto;
-  text-align: center
-}
+  margin: 20px auto;
+  text-align: center;
+} 
 
 .button-area span {
   display: inline-block;
-  width: 100px;
   text-align: center;
-  height: 30px;
-  line-height: 30px;
   border-radius: 5px;
-  background-color: aqua;
   cursor: pointer;
 }
 
+.cancel-button {
+  width: 98px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #ffffff;
+  color: #6b52ae;
+  border: #6b52ae solid 1px;
+}
+
+.confirm-button {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #6b52ae;
+  color: #ffffff;
+  margin-left: 30px;
+}
+
 .formula-area li {
-  height: 60px;
+  height:60px;
   line-height: 60px;
   width: 60px;
   text-align: center;

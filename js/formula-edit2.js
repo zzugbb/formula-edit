@@ -1,21 +1,23 @@
 $(function () {
 
+  //MathJax初始化相关
   MathJax.Hub.Config({
-	  showProcessingMessages: false, //关闭js加载过程信息
+    showProcessingMessages: false, //关闭js加载过程信息
     messageStyle: "none", //不显示信息
     extensions: ["tex2jax.js"],
     jax: ["input/TeX", "output/HTML-CSS"],
     tex2jax: {inlineMath: [["$","$"],["\\(","\\)"],["\[","\]"]]},
     "HTML-CSS": {
       availableFonts: ["STIX", "TeX"],
-      showMathMenu: false  //屏蔽右键菜单
+      showMathMenu: false,  //屏蔽右键菜单
+      linebreaks: {automatic: true} //自动换行
     },
   });
   
   //点击编辑按钮
   $(".edit-button").click(function(){
-    $('.black_overlay').show();
-    $('.alert_content').show();
+    $('.black-overlay').show();
+    $('.alert-content').show();
 
     var textContent = $(this).parent().children('p').attr('text');
     var id = $(this).attr('idCode');
@@ -26,18 +28,18 @@ $(function () {
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.getElementById("text-show")]);
 
     //实施修改更新函数
-    InputMathJax(textContent, id);
+    inputEditFormula(id);
   });
 
 
   //取消按钮
   $('.cancel-button').click(function(){
-    $('.black_overlay').hide();
-    $('.alert_content').hide();
+    $('.black-overlay').hide();
+    $('.alert-content').hide();
   });
 
 
-  function InputMathJax(code, id) {
+  function inputEditFormula(id) {
 
     //监听textarea变化，从而实时更新预览
     $('#text').bind('input propertychange', function () {
@@ -56,8 +58,8 @@ $(function () {
       $('#' + id).html($('#text').val().trim());
       MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.getElementById(id)]);
       $('#' + id).attr("text", $('#text').val().trim())
-      $('.black_overlay').hide();
-      $('.alert_content').hide();
+      $('.black-overlay').hide();
+      $('.alert-content').hide();
     });
   }
 
