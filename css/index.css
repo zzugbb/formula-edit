@@ -1,0 +1,119 @@
+body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, td, th, img, div, dl, dt, dd, input, textarea {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.quest {
+  line-height: 30px;
+  margin: 50px;
+}
+
+.black-overlay {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1000;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.alert-content {
+  display: none;
+  width: 500px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 20%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  *left: 35%;
+  z-index: 1001;
+  padding: 10px;
+}
+
+.operate-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 40px;
+  margin: 5px 50px;
+}
+
+.operate-area img {
+  cursor: pointer;
+}
+
+#text {
+  width: 392px;
+  height: 142px;
+  padding: 3px;
+  margin: 0 50px;
+  font-size: 16px;
+}
+
+#text-show {
+  margin: 10px auto;
+  width: 386px;
+  padding: 5px;
+  height: 186px;
+  border: #dddddd dashed 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all; 
+  overflow-y: scroll;
+}
+
+.button-area {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+} 
+
+.button-area span {
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  width: 98px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #ffffff;
+  color: #6b52ae;
+  border: #6b52ae solid 1px;
+}
+
+.confirm-button {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #6b52ae;
+  color: #ffffff;
+  margin-left: 30px;
+}
+
+.formula-area li {
+  height:60px;
+  line-height: 60px;
+  width: 60px;
+  text-align: center;
+  float: left;
+}
+
+.formula-area li img {
+  vertical-align: middle;
+  cursor: pointer;
+}

@@ -1,0 +1,117 @@
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+th,
+img,
+div,
+dl,
+dt,
+dd,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.black_overlay {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1000;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.alert_content {
+  display: none;
+  width: 500px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 20%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  *left: 35%;
+  z-index: 1001;
+  padding: 10px;
+}
+
+.operate-area {
+  width: 390px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 50px;
+  padding: 5px;
+}
+
+.operate-area img {
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#text {
+  width: 394px;
+  height: 100px;
+  margin-left: 50px;
+}
+
+#text-show {
+  margin: 10px auto;
+  width: 386px;
+  padding: 5px;
+  height: 100px;
+  border: #dddddd dashed 2px;
+  word-break: break-all;
+}
+
+.button-area {
+  width: 300px;
+  margin: 10px auto;
+  text-align: center
+}
+
+.button-area span {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.formula-area li {
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+  text-align: center;
+  float: left;
+}
+
+.formula-area li img {
+  vertical-align: middle;
+  cursor: pointer;
+}
