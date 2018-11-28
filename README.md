@@ -8,6 +8,8 @@
 
 基于 `latex` 和 `MathJax` 实现的。
 
+[效果详见网址](https://zzugbb.github.io/formula-edit/)
+
 ## 具体效果
 
 ![result2](https://github.com/zzugbb/formula-edit/blob/master/img/result2.jpg)
