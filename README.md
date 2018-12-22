@@ -1,4 +1,7 @@
 # formula-edit
+![](https://img.shields.io/badge/language-javascript-red.svg)
+![](https://img.shields.io/badge/license-MIT-blue.svg)
+![](https://img.shields.io/badge/repo%20size-8.03MB-green.svg)
 
 此工程为公式在线编辑 `demo`， 实现数学复杂公式的直接选择.
 
